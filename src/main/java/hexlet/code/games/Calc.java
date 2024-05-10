@@ -21,13 +21,11 @@ public class Calc {
                 case 1-> {
                     qwsAndAns[0] = firstNumExpression + " * " + stepNumExpression;
                     qwsAndAns[1] = String.valueOf(firstNumExpression * stepNumExpression);
-
                 }
                 // если 2, будет сложение
                 case 2-> {
                     qwsAndAns[0] = firstNumExpression + " + " + stepNumExpression;
                     qwsAndAns[1] = String.valueOf(firstNumExpression + stepNumExpression);
-
                 }
                 // если 3 будет вычитание
                 case 3-> {
