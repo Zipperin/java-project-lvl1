@@ -2,12 +2,12 @@ package hexlet.code.games;
 
 import static hexlet.code.Engine.NUMBEROFQUESTIONS;
 import static hexlet.code.Engine.runGame;
-import static hexlet.code.GetRandomNum.getRand;
+import static hexlet.code.Utils.getRand;
 
 public class Calc {
     static final int max = 100;
     static final int numOperators = 3;
-    public static void startGame() {
+    public void startGame() {
         String question = "What is the result of the expression?\nQuestion: ";
         String[][] questionsAndAnswers = new String[NUMBEROFQUESTIONS][2];
 

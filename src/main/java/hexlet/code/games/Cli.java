@@ -3,7 +3,7 @@ package hexlet.code.games;
 import java.util.Scanner;
 
 public class Cli {
-    public static void welcome() {
+    public void welcome() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("""
 

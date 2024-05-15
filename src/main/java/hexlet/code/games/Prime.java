@@ -4,14 +4,13 @@ import java.util.ArrayList;
 
 import static hexlet.code.Engine.NUMBEROFQUESTIONS;
 import static hexlet.code.Engine.runGame;
-import static hexlet.code.GetRandomNum.getRand;
+import static hexlet.code.Utils.getRand;
 
 public class Prime {
-    public static void startGame() {
+    public void startGame() {
         String question = "Answer 'yes' if number even otherwise answer 'no'.";
         String[][] questionsAndAnswers = new String[NUMBEROFQUESTIONS][2];
         final int max = 100;
-
 
         for (var qwsAndAns : questionsAndAnswers) {
             ArrayList<Integer> simpleNumList = new ArrayList<>();

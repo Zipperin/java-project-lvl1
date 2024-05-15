@@ -2,11 +2,11 @@ package hexlet.code.games;
 
 import static hexlet.code.Engine.NUMBEROFQUESTIONS;
 import static hexlet.code.Engine.runGame;
-import static hexlet.code.GetRandomNum.getRand;
+import static hexlet.code.Utils.getRand;
 
 public class Progression {
     static final int max = 15;
-    public static void startGame() {
+    public void startGame() {
         String question = "What number is missing in the progression?";
         String[][] questionsAndAnswers = new String[NUMBEROFQUESTIONS][2];
 

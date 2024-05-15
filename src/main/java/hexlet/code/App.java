@@ -25,14 +25,23 @@ public class App {
         scanner.close();
     }
 
+
     public static void getChoice(String gameNumber) {
+
+        Cli cli = new Cli();
+        Even even = new Even();
+        Calc calc = new Calc();
+        GCD gcd = new GCD();
+        Progression progression = new Progression();
+        Prime prime = new Prime();
+
         switch (gameNumber) {
-            case "1" -> Cli.welcome();
-            case "2" -> Even.startGame();
-            case "3" -> Calc.startGame();
-            case "4" -> GCD.startGame();
-            case "5" -> Progression.startGame();
-            case "6" -> Prime.startGame();
+            case "1" -> cli.welcome();
+            case "2" -> even.startGame();
+            case "3" -> calc.startGame();
+            case "4" -> gcd.startGame();
+            case "5" -> progression.startGame();
+            case "6" -> prime.startGame();
             default -> {
             }
         }
